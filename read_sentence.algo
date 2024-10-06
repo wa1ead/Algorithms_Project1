@@ -4,11 +4,10 @@ VAR
 BEGIN
   FOR len FROM 0 TO sentence.length STEP step  DO
     IF (sentence[len] == ['A', 'E', 'I', 'O', 'U']) THEN
-      
-    ELSE_IF (conditon) THEN
-      set_instructions
+      vowels := vowels+1;
     ELSE
-      set_instructions
+
     END_IF
+    len := len + 1
   END_FOR
 END
