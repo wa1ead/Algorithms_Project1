@@ -1,0 +1,14 @@
+ALGORITHM read_sentence(VAR sentence: STRING)
+VAR
+  len, characters, vowels: INTEGER
+BEGIN
+  FOR len FROM 0 TO sentence.length STEP step  DO
+    IF (sentence[len] == ['A', 'E', 'I', 'O', 'U']) THEN
+      
+    ELSE_IF (conditon) THEN
+      set_instructions
+    ELSE
+      set_instructions
+    END_IF
+  END_FOR
+END
