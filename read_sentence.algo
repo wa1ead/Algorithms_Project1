@@ -2,15 +2,16 @@ ALGORITHM read_sentence(VAR sentence: STRING)
 VAR
   len, characters, vowels: INTEGER
 BEGIN
-  FOR len FROM 0 TO sentence.length STEP step  DO
+  FOR len FROM 0 TO sentence.length STEP 2 DO
     IF (sentence[len] == ['A', 'E', 'I', 'O', 'U']) THEN
       vowels := vowels+1;
     ELSE_IF (sentence[len] == '.') THEN
-      write(len);
       BREAK;
     ELSE
       characters := characters + 1
     END_IF
-    len := len + 1
   END_FOR
+  write(len);
+  write(characters);
+  write(vowels)
 END
