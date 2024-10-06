@@ -6,10 +6,10 @@ BEGIN
     IF (sentence[len] == ['A', 'E', 'I', 'O', 'U']) THEN
       vowels := vowels+1;
     ELSE_IF (sentence[len] == '.') THEN
+      write(len);
       BREAK;
-      write(len)
     ELSE
-    
+      characters := characters + 1
     END_IF
     len := len + 1
   END_FOR
